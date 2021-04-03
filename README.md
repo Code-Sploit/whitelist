@@ -10,4 +10,5 @@ A minetest mod forked from: https://github.com/ShadowNinja/whitelist and improve
 
 # new privileges:
 | privilege       | description                               |
+|-----------------|-------------------------------------------|
 | whitelist       | Allow's to use /whitelist.                |

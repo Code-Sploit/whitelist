@@ -8,7 +8,13 @@ A minetest mod forked from: https://github.com/ShadowNinja/whitelist and improve
 | /whitelist off   | Disables the whitelist.                   |
 | /whitelist list | Lists all the current whitelisted people. |
 
-# new privileges:
+# New privileges:
 | privilege       | description                               |
 |-----------------|-------------------------------------------|
 | whitelist       | Allow's to use /whitelist.                |
+
+# New settings:
+| setting                 | description                                                                            |
+|-------------------------|----------------------------------------------------------------------------------------|
+| whitelist_error_message | Defines the message that a user get's when he/her tries to join but is not whitelisted. |
+| enable_whitelist        | Variable for enabling/disabling the whitelist.                                         |

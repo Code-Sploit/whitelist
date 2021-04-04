@@ -39,7 +39,7 @@ minetest.register_on_prejoinplayer(function(name, ip)
 		return
 	end
 
-	if name == "singleplayer" or name == admin_name or whitelist[name] then
+	if name == "singleplayer" or name == admin_name or whitelist[name] or whitelist[ip] then
 		return
 	end
 
@@ -55,7 +55,7 @@ minetest.register_privilege("whitelist", {
 })
 
 minetest.register_chatcommand("whitelist", {
-	params = "{add|del} <nick> | {on|off}",
+	params = "{add|del} <nick|ip> | {on|off}",
 	help = "Manipulate the whitelist. (Requires the whitelist privilege)",
 	privs = {whitelist = true},
 	

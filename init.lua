@@ -92,7 +92,7 @@ minetest.register_chatcommand("whitelist", {
 				return false, "Whitelist is already enabled!"
 			end
 
-			minetest.settings:set_bool("enable_whitelist", "true")
+			minetest.settings:set_bool("enable_whitelist", true)
 
 			return true, "Enabled the whitelist"
 		elseif action == "off" then
@@ -100,7 +100,7 @@ minetest.register_chatcommand("whitelist", {
 				return false, "Whitelist is already disabled!"
 			end
 
-			minetest.settings:set_bool("enable_whitelist", "false")
+			minetest.settings:set_bool("enable_whitelist", false)
 
 			return true, "Disabled the whitelist!"
 		elseif action == "list" then
